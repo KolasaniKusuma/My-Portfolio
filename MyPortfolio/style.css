@@ -1,0 +1,96 @@
+/* Tech Background Setup using URL */
+body {
+  margin: 0;
+  padding: 0;
+  background: url("software bg.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+}
+
+
+.background-overlay {
+  background-color: rgba(0, 0, 0, 0.75); /* Dark overlay */
+  min-height: 100vh;
+  padding-bottom: 2rem;
+}
+
+/* Header */
+header {
+  background-color: rgba(0, 96, 100, 0.9);
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 3px solid #00bcd4;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile img {
+  width: 70px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid white;
+  object-fit: cover;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  background-color: #00838f;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #004d40;
+}
+
+/* Main Content */
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+section {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #000;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+section.active {
+  display: block;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: #b2dfdb;
+}

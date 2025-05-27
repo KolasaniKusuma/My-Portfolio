@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lakshmi Kusuma Priya | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background-overlay">
+    <header>
+      <div class="profile">
+        <img src="D:\BHAGGI\Y21AIT451.jpg" alt="Lakshmi Kusuma Priya" />
+        <h1>Lakshmi Kusuma Priya</h1>
+      </div>
+      <nav>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('projects')">Projects</a>
+        <a href="#" onclick="showSection('skills')">Skills</a>
+        <a href="#" onclick="showSection('contact')">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="active">
+        <h2>About Me</h2>
+<p>Aspiring software developer with a solid foundation in Python, data structures, and full-stack web development.
+   Experienced in building web applications using frameworks like React and Express, with a focus on writing clean, efficient code and scalable solutions.
+    Skilled in backend technologies such as MongoDB. Successfully completed academic and internship projects that simulate real-world scenarios..</p>      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+         <ul>
+        <li><strong>Movie Recommendation System</strong> – Python, Flask, collaborative filtering</li>
+        <p>• Built a recommendation system using collaborative filtering to suggest personalized movies, 
+        leveraging Python libraries like pandas and Surprise.<br>
+        • Developed a user-item matrix from preprocessed movie ratings data, implementing user-based and 
+        item-based filtering algorithms.<br>
+        • Created a web interface using Flask/Django for users to input preferences and receive tailored movie 
+        recommendations.</p>
+
+        <li><strong>Online Assessment Platform</strong> – MERN stack, real-time exams, PDF reports, Chart.js</li>
+        <p>• Designed and implemented a dynamic full-stack web app for conducting online exams with real-time 
+        evaluation.<br>
+        • Implemented secure user authentication and role-based access control (Admin/Student) with JWT and           
+        Express middleware.<br>
+        • Developed exam creation modules, question banks, result dashboards, and student activity tracking 
+        features.<br>
+        • Enabled downloadable result reports in PDF format and used Chart.js for question-wise performance 
+        visualization.<br>
+        • Built robust RESTful APIs and managed exam metadata, responses, and analytics in MongoDB summaries.</p>
+      </ul>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <p><strong>Languages:</strong> Java, JavaScript, Python(Basic), C(Basic)</p>
+        <p><strong>Technologies:</strong> HTML, CSS, React.js, Node.js, MongoDB</p>
+        <p><strong>Tools:</strong> VS Code, GitHub, Eclipse</p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:kusumapriyakolasani@gmail.com">kusumapriyakolasani@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/KolasaniKusuma" target="_blank">github.com/KolasaniKusuma</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/lakshmi-kusuma-priya-kolasani-2a9320285/" target="_blank">linkedin.com/in/lakshmi-kusuma-priya-kolasani</a></p>
+<p>LeetCode: <a href="https://leetcode.com/u/kusumapriya_09/" target="_blank">leetcode.com/kusumapriya_09</a></p>
+
+        <p>Address: 3/44, Near Sivalayam Temple, Kadavakuduru, Bapatla (Dist), A.P</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Lakshmi Kusuma Priya Kolasani</p>
+    </footer>
+  </div>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll("main section").forEach(section => {
+        section.classList.remove("active");
+      });
+      document.getElementById(id).classList.add("active");
+    }
+  </script>
+</body>
+</html>
